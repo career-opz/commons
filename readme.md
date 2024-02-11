@@ -20,3 +20,6 @@ git clone https://github.com/career-opz/commons.git
 
 <br>
 <p>If there are any changes to this project done by other devs, please don't forget to update your local repo and run the above clean install command</p>
+
+<h2>📷 Project high level architecture:</h2>
+<img src="./architecture/img.png" alt="project-screenshot" />
