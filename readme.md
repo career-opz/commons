@@ -22,4 +22,4 @@ git clone https://github.com/career-opz/commons.git
 <p>If there are any changes to this project done by other devs, please don't forget to update your local repo and run the above clean install command</p>
 
 <h2>📷 Project high level architecture:</h2>
-<img src="./architecture/hi_archi.png" alt="project-screenshot" />
+<img src="./architecture/highlevel_system_design.png" alt="project-screenshot" />
