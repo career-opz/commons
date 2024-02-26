@@ -1,0 +1,36 @@
+version: '3'
+services:
+  commons:
+    build:
+      context: .  
+      dockerfile: Dockerfile
+    image: commons
+    volumes:
+      - ~/.m2:/root/.m2
+
+  cv-manager-service:
+    build:
+      context: ../cv-manager-service  
+      dockerfile: Dockerfile
+    depends_on:
+      - commons
+    ports:
+      - 9092:9092
+
+  file-manager-service:
+    build:
+      context: ../file-manager-service  
+      dockerfile: Dockerfile
+    depends_on:
+      - commons
+    ports:
+      - 9093:9093
+
+  portal-backend:
+    build:
+      context: ../portal-backend 
+      dockerfile: Dockerfile
+    depends_on:
+      - commons
+    ports:
+      - 9091:9091
